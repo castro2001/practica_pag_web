@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Inicio {% endblock titulo %}
+
+{% block contenido %}
+
+
+<div id="carouselExampleControls" class="carousel slide carousel__slider" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    {% load static %}
+      <img src="    {% static 'imagenes/naturaleza1.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+    </div>
+    <div class="carousel-item">
+        {% load static %}
+      <img src="    {% static 'imagenes/naturaleza2.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+    </div>
+    <div class="carousel-item">
+        {% load static %}
+      <img src="    {% static 'imagenes/naturaleza3.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="p-5 mb-4 bg-light rounded-3 container ">
+    <div class="container-fluid py-5">
+      <h1 class="display-5 fw-bold">Bienvenido usuario</h1>
+      <p class="col-md-8 fs-4">
+      Creada de pequeños proyectos ya creados mostrando mis habilidades, los proyectos que se visualiza solo están creada con las tecnología HTML5, CSS y JavaScript donde mis proyectos los tengo alojado en un servidor que me brinda GitHub llamado githubPages.
+      </p>
+      <button class="btn btn-primary btn-lg text-capitalize" type="button">ver más</button>
+    </div>
+  </div>
+
+
+{% endblock contenido %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Contacto {% endblock titulo %}
+
+{% block contenido %}
+<figure class="figure w-100 position-relative">
+  {% load static %}
+      <img src="    {% static 'imagenes/naturaleza3.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+  <figcaption class="figure-caption position-absolute  top-50  start-50 fs-1 text-light" style=" display: flex; justify-content: center; align-items: center;">Contacto</figcaption>
+</figure>
+
+<!-- <div id="carouselExampleControls " class="carousel slide carousel__slider " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+    {% load static %}
+      <img src="    {% static 'imagenes/naturaleza1.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+    </div>
+    <div class="carousel-item">
+        {% load static %}
+      <img src="    {% static 'imagenes/naturaleza2.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+    </div>
+    <div class="carousel-item">
+        {% load static %}
+      <img src="    {% static 'imagenes/naturaleza3.jpg' %}" class="d-block w-100 carrusel__img" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div> -->
+ <div class="container-fluid">
+ <div class="container mt-5 bg-light p-5">
+    <form class="">
+        <div class="mb-3 row">
+            <label for="inputName" class="col-4 col-form-label">Nombre</label>
+            <div class="col-8">
+                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name">
+            </div>
+        </div>
+
+          <div class="mb-3 row">
+            <label for="inputName" class="col-4 col-form-label">Correo electronico o Celular</label>
+            <div class="col-8">
+                <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name">
+            </div>
+        </div>
+
+          <div class="mb-3 row">
+            <label for="inputName" class="col-4 col-form-label">Asunto:</label>
+            <div class="col-8">
+                          <textarea class="form-control" name="" id="" rows="3"></textarea>
+
+            </div>
+        </div>
+   
+        <div class="mb-3 row">
+            <div class="offset-sm-4 col-sm-8">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+    </form>
+ </div>
+</div>
+{% endblock contenido %}
